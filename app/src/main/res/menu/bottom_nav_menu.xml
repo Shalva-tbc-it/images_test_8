@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miHeart"
+        android:icon="@drawable/ic_heart"
+        android:title="" />
+
+    <item
+        android:id="@+id/miHome"
+        android:icon="@drawable/ic_home"
+        android:title="" />
+
+    <item
+        android:id="@+id/miMessage"
+        android:icon="@drawable/ic_message"
+        android:title="" />
+
+</menu>
