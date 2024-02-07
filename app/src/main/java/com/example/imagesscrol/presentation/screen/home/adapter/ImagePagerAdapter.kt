@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.imagesscrol.R
 import com.example.imagesscrol.databinding.PagerImageBinding
 import com.example.imagesscrol.presentation.model.Image
 
@@ -18,6 +19,9 @@ class ImagePagerAdapter : ListAdapter<Image, ImagePagerAdapter.ImageViewHolder>(
             tvLocation.text = item.location
             tvPrice.text = item.price
             tvTitle.text = item.title
+            imgIcRate.setImageResource(R.drawable.ic_group)
+            imgIcFlame.setImageResource(R.drawable.ic_flame)
+            imgIcPin.setImageResource(R.drawable.ic_pin)
             Glide.with(root)
                 .load(item.cover)
                 .into(imgLocation)

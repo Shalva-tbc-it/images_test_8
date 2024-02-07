@@ -3,16 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="40dp">
+    android:layout_margin="1dp">
 
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imgLocation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:elevation="1dp"
         android:scaleType="centerCrop"
-        android:background="@color/bg"
-        android:elevation="1dp" />
+        app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgIcPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_pin"
+        app:layout_constraintBottom_toBottomOf="@id/tvLocation"
+        app:layout_constraintEnd_toStartOf="@id/tvLocation"
+        app:layout_constraintTop_toTopOf="@id/tvLocation" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvLocation"
@@ -22,10 +33,22 @@
         android:layout_marginTop="25dp"
         android:elevation="2dp"
         android:text="Xoni"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="@id/imgLocation"
         app:layout_constraintTop_toTopOf="@id/imgLocation" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgIcFlame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:elevation="2dp"
+
+        android:src="@drawable/ic_flame"
+        app:layout_constraintBottom_toBottomOf="@id/tvReactionCount"
+        app:layout_constraintEnd_toStartOf="@id/tvReactionCount"
+        app:layout_constraintTop_toTopOf="@id/tvReactionCount" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvReactionCount"
@@ -35,7 +58,7 @@
         android:layout_marginEnd="32dp"
         android:elevation="2dp"
         android:text="2500"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="@id/imgLocation"
         app:layout_constraintTop_toTopOf="@id/imgLocation" />
@@ -44,32 +67,42 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginStart="50dp"
-        android:elevation="2dp"
         android:layout_marginBottom="10dp"
+        android:elevation="2dp"
         android:text="title 8"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="28sp"
-        app:layout_constraintStart_toStartOf="@id/imgLocation"
         app:layout_constraintBottom_toTopOf="@id/tvPrice"
-        />
+        app:layout_constraintStart_toStartOf="@id/imgLocation" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="32dp"
-        android:elevation="2dp"
-        android:layout_marginStart="50dp"
-        android:text="$20"
         android:layout_marginBottom="40dp"
-        android:textColor="@color/black"
+        android:elevation="2dp"
+        android:text="$20"
+        android:textColor="@color/white"
         android:textSize="28sp"
-        app:layout_constraintStart_toStartOf="@id/imgLocation"
         app:layout_constraintBottom_toBottomOf="@id/imgLocation"
-        />
+        app:layout_constraintStart_toStartOf="@id/imgLocation" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgIcRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_group"
+
+        app:layout_constraintBottom_toBottomOf="@id/tvPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvPrice" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

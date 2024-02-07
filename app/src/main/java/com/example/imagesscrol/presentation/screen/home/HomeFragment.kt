@@ -40,11 +40,12 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
         }
     }
 
-    private fun bindAdapter() {
+    private fun bindAdapter() = with(binding) {
         imagePagerAdapter = ImagePagerAdapter()
-        binding.viewPager.adapter = imagePagerAdapter
-        binding.viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-        binding.viewPager.offscreenPageLimit = 2
+        viewPager.adapter = imagePagerAdapter
+        viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+        viewPager.offscreenPageLimit = 2
+
     }
 
 
