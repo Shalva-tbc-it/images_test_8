@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@color/bg"
+        android:elevation="1dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:elevation="2dp"
+        android:text="Xoni"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@id/imgLocation"
+        app:layout_constraintTop_toTopOf="@id/imgLocation" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvReactionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:elevation="2dp"
+        android:text="2500"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@id/imgLocation"
+        app:layout_constraintTop_toTopOf="@id/imgLocation" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="50dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="10dp"
+        android:text="title 8"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@id/imgLocation"
+        app:layout_constraintBottom_toTopOf="@id/tvPrice"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:elevation="2dp"
+        android:layout_marginStart="50dp"
+        android:text="$20"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@id/imgLocation"
+        app:layout_constraintBottom_toBottomOf="@id/imgLocation"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
